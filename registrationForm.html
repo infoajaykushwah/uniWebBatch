@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regitration Form</title>
+</head>
+<body>
+    <form action="post">
+        <table border="1">
+            <tr>
+                <th colspan="2">Regitration form</th>
+            </tr>
+            <tr>
+                <td>First name*</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Last name*</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Gender*</td>
+                <td>
+                    <input type="radio" value="male">Male
+                    <input type="radio" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>DOB*</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>City*</td>
+                <td>
+                    <select>
+                        <option value="Bhopal">Bhopal</option>
+                        <option value="Indore"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbis</td>
+                <td>
+                    <input type="checkbox" value="Dancing">Dancing
+                    <input type="checkbox" value="Singing">Singing <br>
+                    <input type="checkbox" value="Playing">Playing
+                    <input type="checkbox" value="reading">Reading
+                </td>
+            </tr>
+            <tr>
+                <td>Email*</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>Password*</td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr>
+                <td>Confirm Password*</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Profile</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>About me</td>
+                <td>
+                    <textarea row="2" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="create profile">
+                    <input type="reset" value="clear all">
+                </th>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
