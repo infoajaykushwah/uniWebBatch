@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function demo(){
+            var fnm, lnm;
+            fnm = document.getElementById("fnm").value;
+            lnm = document.getElementById("lnm").value;
+            if(fnm.length==0){
+                document.getElementById("s1").innerHTML="Enter first name";
+            }
+            if(lnm.length==0){
+                document.getElementById("s2").innerHTML="Enter last name";
+            }
+        }
+
+        function clear1(temp){
+            temp.innerHTML="";
+        }
+
+    </script>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    first name <input type="text" id="fnm" onkeyup="clear1(s1)"> <span id="s1"></span>
+    <br>
+    last name <input type="text" id="lnm" onkeyup="clear1(s2)"> <span id="s2"></span>
+    <br>
+    <input type="button" value="click here" onclick="demo()">  
+</body>
+</html>
