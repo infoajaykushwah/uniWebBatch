@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function demo(){
+            var male, female;
+            male = document.getElementById("male");
+            female = document.getElementById("female");
+            if(!(male.checked || female.checked)){
+                document.getElementById("s1").innerHTML="please select any 1";
+            }
+        }
+    </script>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    Gender <input type="radio" name="gender" id="male" onchange="clear1(s1)">male 
+    <input type="radio" name="gender" id="female" onchange="clear1(s1)">female
+    <br>
+    <input type="button" value="Submit" onclick="demo()">
+</body>
+</html>
