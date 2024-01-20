@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function demo(){
+            var fnm;
+            fnm=document.getElementById('fnm').value;
+            if(fnm.length==0){
+                var span;
+                span = document.getElementById('s1').innerHTML='enter first name';
+            }
+        }
+        function onlychar(){
+            var fnm, reg;
+            fnm = document.getElementById('fnm').value;
+            reg = /^[a-zA-Z]+$/
+            if(!reg.test(fnm)){
+                document.getElementById('s1').innerHTML='Enter only Char';
+            }else{
+                document.getElementById('s1').innerHTML='';
+            }
+        }
+
+    </script>
+    <style>
+        span{color: red;}
+    </style>
+</head>
+<body>
+    first name <input type="text" id="fnm" onkeyup="onlychar()" onkeydown="onlychar()"><span id="s1"></span>
+    <br>
+    <input type="button" value="click here" onclick="demo()">
+</body>
+</html>
