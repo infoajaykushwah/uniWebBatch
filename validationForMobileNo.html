@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function demo(){
+            var mno;
+            mno=document.getElementById('mno').value;
+            if(mno.length==0){
+                document.getElementById('s1').innerHTML='Enter Mobile Number';
+            }
+        }
+        function onlynumber(){
+            var mno, reg;
+            mno = document.getElementById('mno').value;
+            reg = /^[6789][0-9]{9}/
+            if(!reg.test(mno)){
+                document.getElementById('s1').innerHTML='Invalid Mobile Number';
+            }else{
+                document.getElementById('s1').innerHTML='';
+            }
+        }
+
+    </script>
+    <style>
+        span{color: red;}
+    </style>
+</head>
+<body>
+    Mobile number<input type="text" id="mno" maxlength="10" onkeyup="onlynumber()"><span id="s1"></span>
+    <br>
+    <input type="button" value="click here" onclick="demo()">
+</body>
+</html>
